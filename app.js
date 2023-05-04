@@ -1,3 +1,5 @@
+
+
 const express = require('express');
 const path = require('path');
 // Init App
@@ -16,12 +18,18 @@ app.get('/', function(req, res){
 
 
 // Start Server
-app.listen(3000, function(){
-  console.log('server started on port 3000...')
+app.listen(4000, function(){
+  console.log('server started on port 4000...')
 })
 
 // About Route
-app.get('/about', function(req, res){
-  res.render('about');
+app.get('/contact', function(req, res){
+  res.render('contact');
 })
+
+app.get('/services', function(req, res){
+  res.render('services');
+})
+
+
 

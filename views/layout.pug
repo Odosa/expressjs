@@ -2,9 +2,16 @@ doctype html
 html 
     head 
         title   Learning Express 
-    body 
-        block content
-        br
-        hr
-        footer 
-            p Copyright &copy; 2022
+    body(style={margin: '0', padding: '0', border:'0'})
+        nav(style={background: 'rgb(7, 28, 59, 0.87)', width: '100%', height: '50px'})
+            div(style={})
+                a(href="/" style={}) HOME
+            div(style={})
+                a(href="/services" style={}) services
+                
+                a(href="/contact" style={}) contact Us
+            block content
+            br
+            hr
+            footer 
+                p Copyright &copy; 2022
